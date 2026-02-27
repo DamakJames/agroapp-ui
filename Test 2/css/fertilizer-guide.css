@@ -1,0 +1,99 @@
+/* ===== FERTILIZER GUIDE SCREEN (Screen 9) ===== */
+.guide-results {
+    overflow-y: auto;
+}
+
+.guide-header-img {
+    background: url('wheat-field.jpg') center/cover;
+    height: 120px;
+    border-radius: 0 0 20px 20px;
+    margin: -20px -20px 20px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-header-img h2 {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.selection-display {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.result-card {
+    background: #FFF9C4;
+    border: 1px solid #FBC02D;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.mini-prod {
+    width: 50px;
+}
+
+.instructions {
+    font-size: 11px;
+    line-height: 1.5;
+    border-top: 1px solid #fbc02d66;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-inquiry {
+    width: 100%;
+    background: #43A047;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.guide-footer-btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.btn-nav-guide {
+    flex: 1;
+    background: #ffcdd2;
+    border: 1px solid #f44336;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #b71c1c;
+    cursor: pointer;
+}
+
+.btn-nav-guide:hover {
+    background: #f8bbd0;
+}
+
+.btn-nav-guide.green {
+    background: #c8e6c9;
+    border: 1px solid #43A047;
+    color: #1b5e20;
+}
+
+.btn-nav-guide.green:hover {
+    background: #a5d6a7;
+}

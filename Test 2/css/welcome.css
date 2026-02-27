@@ -1,0 +1,174 @@
+/* ===== WELCOME SCREENS (Screens 4 & 5) ===== */
+.welcome-farmer {
+    border-radius: 36px 40px 37px 38px;
+    background: url('/images/bg.png') center/cover no-repeat;
+}
+
+.welcome-dealer {
+    border-radius: 39px 38px 40px 36px;
+    background: url('/images/bg.png') center/cover no-repeat;
+}
+
+.role-card1 {
+    border-radius: 25px;
+    padding: 40px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tag-label {
+    background: #43A047;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header-section {
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-section img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.action-btn {
+    background: #FAFF00;
+    color: #333;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* ===== ROLE SELECTION (Screen 5 Alt) ===== */
+.main-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.top-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-text {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.yellow-text {
+    color: #ebf561;
+}
+
+.lang-nav {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.menu-icon {
+    margin: 0 5px;
+}
+
+.active-lang {
+    text-decoration: underline;
+}
+
+.role-selection {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.role-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.role-box .white-circle {
+    margin-bottom: 12px;
+}
+
+.role-btn {
+    background: #f7cf97;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 15px;
+    font-weight: 800;
+    color: #222;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-cta {
+    margin-top: 30px;
+}
+
+.promo-msg {
+    font-size: 11px;
+    font-weight: 600;
+    width: 200px;
+    margin: 0 auto 15px;
+    line-height: 1.4;
+}
+
+.discover-btn {
+    background: #fbc02d;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #111;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.home-bar {
+    position: absolute;
+    bottom: 10px;
+    width: 130px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+}

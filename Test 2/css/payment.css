@@ -1,0 +1,73 @@
+/* ===== PAYMENT SCREEN (Screen 11) ===== */
+.payment {
+    border-radius: 40px 37px 39px 38px;
+}
+
+.payment-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 80px;
+}
+
+.pay-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card-details {
+    margin: 20px 0;
+}
+
+.card-details p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.card-icons {
+    width: 60px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.total-box {
+    background: #f8f8f8;
+    border: 1px dashed #ccc;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn-pay-now {
+    width: 100%;
+    background: #F4A261;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-pay-now:hover {
+    background: #e69250;
+}
+
+.shipping-info {
+    font-size: 11px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}

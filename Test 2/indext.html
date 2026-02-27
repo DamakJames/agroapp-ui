@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFarm Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-flow">
+<!-- this is screen 1 -->
+        <div class="mobile-frame splash-screen">
+            <div class="overlay">
+                <div class="splash-content">
+                    <h2>Grow smarter with Our <span class="highlight">AgroFarm</span></h2>
+                </div>
+                <div class="logo-box">
+                    <img src="/images/logo.png" alt="AgroFarm Logo">
+                </div>
+                <div class="bottom-label">AgroFarm</div>
+            </div>
+        </div>
+<!-- this is screen two -->
+        <div class="mobile-frame intro-screen">
+            <div class="overlay">
+                <div class="logo-circle-top">
+                    <img src="/images/logo.png" alt="Icon">
+                </div>
+                <div class="intro-text">
+                    <p>Explore our vibrant marketplace where farmers and dealers converge to exchange a diverse array of agricultural products.</p>
+                </div>
+                <div class="intro-buttons">
+                    <button class="btn-green">Discover More</button>
+                    <button class="btn-yellow">Skip »</button>
+                </div>
+            </div>
+        </div>
+        <!-- this is screen three -->
+     <div class="mobile-frame intro-screen">
+            <div class="overlay">
+                <div class="logo-circle-top">
+                    <img src="/images/logo.png" alt="Icon">
+                </div>
+                <div class="intro-text">
+                    <p>Access expert agricultural guidance
+                         tailored to your needs, ensuring optimal 
+                        productivity and success in your farming 
+                        endeavors..</p>
+                </div>
+                <div class="intro-buttons">
+                    <button class="btn-green">Discover More</button>
+                    <button class="btn-yellow">Skip »</button>
+                </div>
+            </div>
+        </div>
+<!-- this is screen four -->
+        <!-- <div class="mobile-frame welcome-farmer">
+            <div class="overlay">
+                <div class="header-section">
+                    <img src="/images/logo.png" alt="Logo" class="mini-logo">
+                    <h1>Welcome  To <br> AgroFarm !</h1>
+                </div>
+                <div class="role-card1">
+                    <div class="avatar-bg">
+                        <img src="farmer-illustration-link.png" alt="Farmer"><br>
+                         <span class="tag-label">Dealer</span>
+                    </div>
+                   
+                    <div class="avatar-bg">
+                        <img src="farmer-illustration-link.png" alt="Dealer"> <br>
+                        <span class="tag-label">Farmer</span>
+                    </div>
+                    
+                </div>
+                <button class="action-btn">Get Started »</button>
+            </div>
+        </div> -->
+<!-- this is screen five dealer and farmer -->
+        
+        <div class="mobile-frame">
+            <div class="main-overlay">
+                
+                <div class="top-brand">
+                    <div class="logo-circle">
+                        <img src="/images/logo.png" alt="Logo">
+                    </div>
+                    <span class="brand-text"></span>
+                </div>
+
+                <h1 class="hero-title">
+                    Welcome To <br>
+                    <span class="yellow-text">AgroFarm</span>
+                </h1>
+
+                <div class="lang-nav">
+                    Choose Language <span class="menu-icon">☰</span> 
+                    <span class="lang-item">English</span> 
+                    <span class="lang-item active-lang">Sinhala</span>
+                </div>
+
+                <div class="role-selection">
+                    <div class="role-box">
+                        <div class="white-circle">
+                            <img src="/images/farmer.png" alt="Farmer">
+                        </div>
+                        <button class="role-btn">Farmer</button>
+                    </div>
+
+                    <div class="role-box">
+                        <div class="white-circle">
+                            <img src="/images/deelaer.png" alt="Dealer">
+                        </div>
+                        <button class="role-btn">Dealer</button>
+                    </div>
+                </div>
+
+                <div class="footer-cta">
+                    <p class="promo-msg">We're popular in agriculture market globally</p>
+                    <button class="discover-btn">Discover More</button>
+                </div>
+
+                <div class="home-bar"></div>
+                
+            </div>
+        </div>
+
+<!-- this is dignup/login screen  -->
+        <div class="mobile-frame login-bg">
+            <div class="overlay">
+                <div class="logo-wrap">
+                    <div class="logo-circle">
+                        <img src="/images/logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="login-meta">
+                    <p>Already have an account?</p>
+                    <p class="yellow-text">Login AgroFarm</p>
+                    <p class="mt-20">Don't have account? <span class="yellow-text">Register now</span></p>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" placeholder="User Name">
+                    <span class="user-icon">👤</span>
+                </div>
+
+                <button class="btn-login">Login ➔</button>
+                <div class="home-indicator"></div>
+            </div>
+        </div>
+
+<!-- this is dashboaard -->
+    
+<div class="mobile-frame dashboard-bg">
+        
+        <header class="dash-header">
+            <div class="header-text">
+                <h1>Hi , Amal</h1>
+                <p>Dashboard</p>
+            </div>
+            <div class="profile-badge">
+                <img src="/images/farmer.png" alt="Profile">
+            </div>
+        </header>
+
+        <div class="content-body">
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+                <span class="search-btn"><svg width="30" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M59.4727 56.9531L44.8828 42.3633C46.8359 40.0977 48.3691 37.5391 49.4824 34.6875C50.5957 31.8359 51.1523 28.8086 51.1523 25.6055C51.1523 22.0508 50.4883 18.7305 49.1602 15.6445C47.832 12.5195 46.0059 9.80469 43.6816 7.5C41.3574 5.19531 38.6328 3.35937 35.5078 1.99219C32.4219 0.664062 29.1211 -7.10074e-09 25.6055 -6.2435e-09C22.0508 -5.37675e-09 18.7305 0.664062 15.6445 1.99219C12.5195 3.35937 9.80469 5.19531 7.5 7.5C5.19531 9.80469 3.35937 12.5195 1.99219 15.6445C0.664063 18.7305 -9.25334e-09 22.0508 -8.38659e-09 25.6055C-7.52935e-09 29.1211 0.664063 32.4219 1.99219 35.5078C3.35937 38.6328 5.19531 41.3477 7.5 43.6523C9.80469 45.957 12.5195 47.793 15.6445 49.1602C18.7305 50.4883 22.0508 51.1523 25.6055 51.1523C28.8086 51.1523 31.8359 50.5957 34.6875 49.4824C37.5391 48.3691 40.0977 46.8359 42.3633 44.8828L56.9531 59.4727C57.1094 59.6289 57.3047 59.7559 57.5391 59.8535C57.7734 59.9512 57.9883 60 58.1836 60C58.418 60 58.6523 59.9609 58.8867 59.8828C59.1211 59.8047 59.3164 59.668 59.4727 59.4727C59.8242 59.1211 60 58.7012 60 58.2129C60 57.7246 59.8242 57.3047 59.4727 56.9531ZM3.57422 25.6055C3.57422 22.5586 4.16016 19.707 5.33203 17.0508C6.46484 14.3555 8.02734 12.0117 10.0195 10.0195C12.0117 8.02734 14.3555 6.46484 17.0508 5.33203C19.707 4.16016 22.5586 3.57422 25.6055 3.57422C28.6133 3.57422 31.4648 4.16016 34.1602 5.33203C36.8164 6.46484 39.1406 8.02734 41.1328 10.0195C43.125 12.0117 44.6875 14.3555 45.8203 17.0508C46.9922 19.707 47.5781 22.5586 47.5781 25.6055C47.5781 28.6133 46.9922 31.4648 45.8203 34.1602C44.6875 36.8164 43.125 39.1406 41.1328 41.1328C39.1406 43.125 36.8164 44.707 34.1602 45.8789C31.4648 47.0117 28.6133 47.5781 25.6055 47.5781C22.5586 47.5781 19.707 47.0117 17.0508 45.8789C14.3555 44.707 12.0117 43.125 10.0195 41.1328C8.02734 39.1406 6.46484 36.8164 5.33203 34.1602C4.16016 31.4648 3.57422 28.6133 3.57422 25.6055Z" fill="white"/>
+</svg>
+</span>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="icon-circle ic-green">🏠</div>
+                    <span>Articles</span>
+                </div>
+                <div class="menu-item">
+                    <div class="icon-circle ic-red"></div>
+                    <span>Market</span>
+                </div>
+                <div class="menu-item">
+                    <div class="icon-circle ic-blue">📔</div>
+                    <span>Guide</span>
+                </div>
+                <div class="menu-item active-item">
+                    <div class="icon-circle ic-yellow">📊</div>
+                    <span>Reports</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-btn">
+                <img src="/images/home.png" alt="Home" class="nav-icon">
+            </div>
+            <div class="nav-btn">
+                <img src="/images/menu.png" alt="Menu" class="nav-icon">
+            </div>
+            <div class="nav-btn">
+                <img src="/images/profile.png" alt="Profile" class="nav-icon">
+            </div>
+            <div class="nav-btn">
+                <img src="/images/logout.png" alt="Logout" class="nav-icon">
+            </div>
+        </nav>
+
+        <div class="home-indicator"></div>
+
+    </div>
+
+ <!-- this is npk diffrent fertilzer -->
+        <div class="mobile-frame marketplace">
+            <div class="white-bg">
+                <header class="page-header">
+                    <span>⬅</span>
+                    <h2>Marketplace</h2>
+                    <div class="user-badge-sm"></div>
+                </header>
+                <div class="filter-tabs">
+                    <span class="tab active">All</span>
+                    <span class="tab">Organic</span>
+                    <span class="tab">NPK</span>
+                </div>
+                 <h3 class="section-title">Featured Products</h3>
+                
+                
+                <div class="product-list">
+                    <div class="product-card-horizontal">
+                        <img src="/images/npk.png" alt="Product">
+                        <div class="prod-info">
+                            <small>ORGANIC</small>
+                            <strong>NPK -0:0:50</strong>
+                            <p class="price">Rs.2400/=</p>
+                            <button class="btn-shop">🛒 SHOP NOW</button>
+                        </div>
+                    </div>
+                    <div class="product-card-horizontal">
+                        <img src="/images/npk.png" alt="Product">
+                        <div class="prod-info">
+                            <small>ORGANIC</small>
+                            <strong>NPK -15:15:15</strong>
+                            <p class="price">Rs.1500/=</p>
+                            <button class="btn-shop">🛒 SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+        </div>
+
+ <!-- npk big size bag big screen -->
+        <div class="mobile-frame product-details">
+            <div class="white-bg">
+                <header class="page-header"><span>⬅</span></header>
+                <div class="main-prod-img">
+                    <img src="/images/npk.png" alt="NPK Bag">
+                </div>
+                <div class="details-content">
+                    <h2>NPK -15:15:15</h2>
+                    <p class="description">NPK Prime 15:15:15+S+Mg Fertilizer For Vegetables Fruits and Flowers 100g 200g 500g 1kg</p>
+                    <div class="qty-selector">
+                        <span>🕒 01</span>
+                        <span class="final-price">RS. 1500/=</span>
+                    </div>
+                    <div class="detail-actions">
+                        <button class="btn-buy">Buy Now</button>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+             <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+        </div>
+<!-- this is for payment -->
+
+    <div class="mobile-frame payment-screen">
+        
+        <header class="payment-header">
+            <div class="back-container">
+                <button class="back-arrow">←</button>
+                <h2 class="header-title">Payment</h2>
+            </div>
+        </header>
+
+        <div class="payment-body">
+            
+            <div class="white-card summary-table">
+                <div class="table-row">
+                    <span class="label">Price Amount</span>
+                    <span class="value">Rs.1500/=</span>
+                </div>
+                <div class="table-row">
+                    <span class="label">Category</span>
+                    <span class="value">NPK -15</span>
+                </div>
+                <div class="table-row">
+                    <span class="label">Delivery</span>
+                    <span class="value">3 - 4 Day</span>
+                </div>
+                <div class="table-row no-border">
+                    <span class="label">Seller</span>
+                    <span class="value">Saman</span>
+                </div>
+            </div>
+
+            <div class="white-card card-details">
+                <div class="card-header">
+                    <span>Enter Card Details</span>
+                    <div class="card-logos">
+                        <img src="/images/master.png" alt="Visa">
+                        <img src="/images/visa.png" alt="Mastercard">
+                    </div>
+                </div>
+                <div class="total-display">
+                    <h3>Total amount : 1500/=</h3>
+                </div>
+            </div>
+
+            <div class="contact-seller">
+                <span>Contact Seller</span>
+                <div class="phone-circle">
+                    <img src="/images/call.png" alt="Call">
+                </div>
+            </div>
+
+            <div class="shipping-info">
+                <img src="/images/cardeli.png" alt="Truck" class="truck-icon">
+                <div class="shipping-text">
+                    <strong>Free Shipping</strong>
+                    <p>On All Orders Over Rs.5000.00</p>
+                </div>
+            </div>
+
+            <button class="pay-now-btn">Pay Now</button>
+
+        </div>
+
+        <div class="home-indicator"></div>
+    </div>
+
+
+    <!-- the end of paycard -->
+
+    <!-- this is for payment success -->
+<div class="mobile-frame success">
+            <div class="white-bg centered">
+
+                 <button class="btn-back">← Back to Marketplace</button>
+
+                <div class="success-circle">✓</div>
+
+                <h2 class="paysucc">Payment Success</h2>
+               
+            </div>
+               <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+     </div>
+
+<!-- end pf payment succes -->
+
+<!-- this is welcome dealer -->
+  <div class="mobile-frame welcome-bg">
+        
+        <header class="top-branding">
+            <div class="agro-logo-mini">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <h1 class="welcome-text">Welcome !</h1>
+        </header>
+
+        <div class="identity-section">
+            <div class="icon-circle">
+                <img src="/images/farmer.png" alt="Farmer">
+            </div>
+            <div class="label-badge">
+                Dealer
+            </div>
+        </div>
+
+        <footer class="action-section">
+            <button class="get-started-btn">
+                Get Started <span class="chevron">»</span>
+            </button>
+        </footer>
+        
+    </div>
+
+<!-- this is the welcome farmer screen line two -->
+ <div class="mobile-frame welcome-bg">
+        
+        <header class="top-branding">
+            <div class="agro-logo-mini">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <h1 class="welcome-text">Welcome !</h1>
+        </header>
+
+        <div class="identity-section">
+            <div class="icon-circle">
+                <img src="/images/farmer.png" alt="Farmer">
+            </div>
+            <div class="label-badge">
+                Farmer
+            </div>
+        </div>
+
+        <footer class="action-section">
+            <button class="get-started-btn">
+                Get Started <span class="chevron">»</span>
+            </button>
+        </footer>
+        
+    </div>
+
+<!-- this is HI SAM dashbord -->
+
+<div class="mobile-frame merchant-bg">
+    <header class="merchant-header">
+        <div class="header-content">
+            <h1>Hi,Saman</h1>
+            <div class="profile-badge">
+                <img src="/images/profileimage2.png" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <div class="merchant-grid">
+        <div class="m-card br-dark-green">
+            <div class="m-icon">🏪</div>
+            <p>My Products</p>
+        </div>
+        <div class="m-card br-blue">
+            <div class="m-icon">📋</div>
+            <p>Orders</p>
+        </div>
+        <div class="m-card br-green">
+            <div class="m-icon">💳</div>
+            <p>Payment</p>
+        </div>
+        <div class="m-card br-red">
+            <div class="m-icon">💬</div>
+            <p>Customer Chat</p>
+        </div>
+    </div>
+
+    <div class="store-footer">
+        <img src="/images/storeimage.png" alt="Store" class="loc-img">
+        <div class="loc-text">
+            <strong>Store Locator</strong>
+            <span>Find Your Nearest Store</span>
+        </div>
+    </div>
+ <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+   
+</div>
+
+
+<!-- this is order now screen -->
+
+<div class="mobile-frame orders-screen">
+    <header class="orders-header">
+        <button class="back-arrow">←</button>
+        <h2 class="page-title">Orders</h2>
+        <div class="header-profile">
+            <img src="/images/profileimage2.png" alt="User">
+        </div>
+    </header>
+
+    <div class="orders-list">
+        
+        <div class="order-card">
+            <div class="order-img">
+                <img src="/images/npk.png" alt="Fertilizer">
+            </div>
+            <div class="order-info">
+                <div class="user-line">👤 <strong>Amal</strong></div>
+                <div class="product-line"><strong>NPK -15:15:15</strong></div>
+                <div class="quantity-line">Quantity - 01</div>
+                <div class="contact-line">📞 0774624683 </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-img">
+                <img src="/images/fatgimage.png" alt="Fertilizer">
+            </div>
+            <div class="order-info">
+                <div class="user-line">👤 <strong>Nimal</strong></div>
+                <div class="product-line"><strong>NPK - 0:19</strong></div>
+                <div class="quantity-line">Quantity - 04</div>
+                <div class="contact-line">📞 0774624683</div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-img">
+                <img src="/images/npk3.png" alt="Fertilizer">
+            </div>
+            <div class="order-info">
+                <div class="user-line">👤 <strong>Kalana</strong></div>
+                <div class="product-line"><strong>Urea - 10:5</strong></div>
+                <div class="quantity-line">Quantity - 01</div>
+                <div class="contact-line">📞 0774624683</div>
+            </div>
+        </div>
+
+         <div class="order-card">
+            <div class="order-img">
+                <img src="/images/npk2.png" alt="Fertilizer">
+            </div>
+            <div class="order-info">
+                <div class="user-line">👤 <strong>Kalana</strong></div>
+                <div class="product-line"><strong>Urea - 10:5</strong></div>
+                <div class="quantity-line">Quantity - 01</div>
+                <div class="contact-line">📞 0774624683</div>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="nav-item">🏠</div>
+        <div class="nav-item">☰</div>
+        <div class="nav-item">👤</div>
+        <div class="nav-item">🚪</div>
+    </nav>
+    <div class="home-indicator"></div>
+</div>
+
+<!-- this is fertilizer guide second section -->
+
+<div class="mobile-frame guide-results">
+            <div class="white-bg">
+                <div class="guide-header-img">
+                    <h2>Fertilizer Guide</h2>
+                </div>
+                <div class="selection-display1">
+                    <div class="pill1">crop name <span class="dropdown">▼</span></div>
+                    <div class="pill1">crop week <span class="dropdown">▼</span></div>
+                    <div class="pill2">Area <span class="area20">whit</span></div>
+                </div>
+                <div class="guide-footer-btns">
+                    <button class="btn-nav-guide1">Submit</button>
+                </div>
+            </div>
+            <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+
+
+
+            
+        </div>
+
+<!-- this is fertilizer guide cocoanut -->
+   <div class="mobile-frame guide-results">
+            <div class="white-bg">
+                <div class="guide-header-img">
+                    <h2>Fertilizer Guide</h2>
+                </div>
+                <div class="selection-display1">
+                    <div class="pill1">Coconut</div>
+                    <div class="pill1">Week 4</div>
+                    <div class="pill2">Area <span class="area20">20 Hec</span></div>
+                </div>
+                <div class="guide-footer-btns">
+                    <button class="btn-nav-guide1">submit</button>
+                </div>
+            </div>
+            <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+
+
+
+            
+        </div>
+
+<!-- this is guid page second to the last -->
+    <div class="mobile-frame guide-results">
+            <div class="white-bg">
+                <div class="guide-header-img">
+                    <h2>Fertilizer Guide</h2>
+                </div>
+                <div class="selection-display">
+                    <div class="pill">Coconut</div>
+                    <div class="pill blue">Week - 4</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-header">
+                        <div>
+                            <p>Fertilizer Category: <strong>Coconut (Min)</strong></p>
+                            <p>Ratio: <strong>12 : 09 : 32</strong></p>
+                        </div>
+                        <img src="/images/fatgimage.png" alt="NPK" class="mini-prod">
+                    </div>
+                    <div class="instructions">
+                        <strong>How to apply:</strong>
+                        <p>1. Fertilizer should be applied in a circular pattern, 1 foot away from the base of the plant in the first 1-1.5 years.</p>
+                        <p>2. Distance of application from the base of the tree should gradually increase with growth.</p>
+                    </div>
+                    <button class="btn-inquiry1">Price Inquiry ▶| </button>
+                </div>
+                <div class="guide-footer-btns">
+                    <button class="btn-nav-guide">|◀ Previous Week</button>
+                    <button class="btn-nav-guide green">Next Week ▶|</button>
+                </div>
+            </div>
+            <nav class="bottom-tab"><img src="/images/navbt1.png" alt="Nav"></nav>
+
+
+
+            
+        </div>
+     
+     <!-- this screen is the signup last screen -->
+
+        <div class="mobile-frame register">
+            <div class="overlay">
+                <div class="logo-circle med"><img src="/images/logo.png" alt="AgroFarm"></div>
+                <div class="input-stack">
+                    <input type="text" placeholder="User Name">
+                    <input type="password" placeholder="Password">
+                    <input type="tel" placeholder="Phone No">
+                </div>
+                <button class="btn-yellow1">Sign Up ⇥</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
+
+

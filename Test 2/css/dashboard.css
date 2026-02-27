@@ -1,0 +1,134 @@
+/* ===== DASHBOARD SCREEN (Screen 6) ===== */
+.dashboard-screen {
+    border-radius: 37px 39px 36px 40px;
+}
+
+.dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dash-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.grid-card {
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grid-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.grid-card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.grid-card.lime {
+    background: #c6ff00;
+}
+
+.grid-card.blue-tint {
+    background: #e3f2fd;
+}
+
+.grid-card.green-tint {
+    background: #c8e6c9;
+}
+
+.grid-card.yellow-tint {
+    background: #fff9c4;
+}
+
+.store-bar {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bar-left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.bar-left img {
+    width: 40px;
+}
+
+.bar-txt strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.bar-txt small {
+    font-size: 12px;
+    color: #999;
+}
+
+.chevron {
+    font-size: 18px;
+    color: #666;
+}
+
+.footer-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #eee;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+}

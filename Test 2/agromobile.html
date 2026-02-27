@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFarm App - Today's Test</title>
+    <style>
+        /* --- General Reset & Fonts --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* --- Mobile Frame Container --- */
+        .mobile-container {
+            width: 375px;
+            height: 812px;
+            background-color: #fff;
+            border-radius: 40px;
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #333;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        /* --- Welcome Screen Styles --- */
+        .welcome-screen {
+            height: 100%;
+            /* Replace the URL below with your farm background image */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex; /* Change to 'none' to hide this screen */
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo-area h1 {
+            color: #fff;
+            font-size: 32px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .role-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            padding: 30px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar-circle {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 40px;
+        }
+
+        .role-tag {
+            background-color: #f3e5ab; /* Tan color from Figma */
+            color: #000;
+            padding: 4px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background-color: #D4E157; /* Lime Green */
+            color: #000;
+            border: none;
+            padding: 15px 50px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(212, 225, 87, 0.4);
+        }
+
+        /* --- Dashboard Screen Styles --- */
+        .dashboard-screen {
+            height: 100%;
+            background-color: #fff;
+            padding: 20px;
+            display: none; /* Change to 'flex' to show this screen */
+            flex-direction: column;
+        }
+
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .user-avatar {
+            width: 45px;
+            height: 45px;
+            background: #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .service-item {
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Figma Specific Grid Colors */
+        .item-products { background-color: #D4E157; }
+        .item-orders   { background-color: #E3F2FD; border-left: 5px solid #2196F3; }
+        .item-payment  { background-color: #E8F5E9; border-left: 5px solid #4CAF50; }
+        .item-chat     { background-color: #FFFDE7; border-left: 5px solid #FBC02D; }
+
+        .icon-lg { font-size: 24px; margin-bottom: 8px; }
+
+        /* Store Locator */
+        .store-locator {
+            margin-top: 25px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .loc-info { display: flex; align-items: center; gap: 10px; }
+        .loc-text strong { display: block; font-size: 14px; }
+        .loc-text span { font-size: 11px; color: #888; }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #eee;
+        }
+
+        .nav-item { font-size: 20px; color: #ccc; cursor: pointer; }
+        .nav-item.active { color: #4CAF50; }
+
+    </style>
+</head>
+<body>
+
+    <div class="mobile-container">
+        
+        <section class="welcome-screen">
+            <div class="logo-area">
+                <div class="avatar-circle" style="background: transparent; border: 2px solid white; color: white;">🌿</div>
+                <h1>Welcome !</h1>
+            </div>
+
+            <div class="role-selection">
+                <div class="role-card">
+                    <div class="avatar-circle">👨‍🌾</div>
+                    <span class="role-tag">Farmer</span>
+                </div>
+                <button class="btn-primary" onclick="showDashboard()">Get Started »</button>
+            </div>
+        </section>
+
+        <section class="dashboard-screen" id="dashboard">
+            <header class="dashboard-header">
+                <h2>Hi, Saman</h2>
+                <div class="user-avatar">👤</div>
+            </header>
+
+            <div class="services-grid">
+                <div class="service-item item-products">
+                    <div class="icon-lg">🧺</div>
+                    <span>My Products</span>
+                </div>
+                <div class="service-item item-orders">
+                    <div class="icon-lg">📋</div>
+                    <span>Orders</span>
+                </div>
+                <div class="service-item item-payment">
+                    <div class="icon-lg">💳</div>
+                    <span>Payment</span>
+                </div>
+                <div class="service-item item-chat">
+                    <div class="icon-lg">💬</div>
+                    <span>Customer Chat</span>
+                </div>
+            </div>
+
+            <div class="store-locator">
+                <div class="loc-info">
+                    <span>📍</span>
+                    <div class="loc-text">
+                        <strong>Store Locator</strong>
+                        <span>Find Your Nearest Store</span>
+                    </div>
+                </div>
+                <span>❯</span>
+            </div>
+
+            <nav class="bottom-nav">
+                <div class="nav-item active">🏠</div>
+                <div class="nav-item">☰</div>
+                <div class="nav-item">👤</div>
+                <div class="nav-item">🚪</div>
+            </nav>
+        </section>
+
+    </div>
+
+    <script>
+        // Small script to toggle screens for your test demonstration
+        function showDashboard() {
+            document.querySelector('.welcome-screen').style.display = 'none';
+            document.querySelector('.dashboard-screen').style.display = 'flex';
+        }
+    </script>
+
+</body>
+</html>
+<div class="mobile-container dashboard">
+    <header class="dashboard-header">
+        <h2>Hi, Saman</h2>
+        <div class="user-avatar">
+            <img src="user-profile.png" alt="Profile">
+        </div>
+    </header>
+
+    <div class="services-grid">
+        <div class="service-item product-bg">
+            <div class="icon-box">📦</div>
+            <span>My Products</span>
+        </div>
+        
+        <div class="service-item orders-bg">
+            <div class="icon-box">📋</div>
+            <span>Orders</span>
+        </div>
+
+        <div class="service-item payment-bg">
+            <div class="icon-box">💳</div>
+            <span>Payment</span>
+        </div>
+
+        <div class="service-item chat-bg">
+            <div class="icon-box">💬</div>
+            <span>Customer Chat</span>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="nav-icon active">🏠</div>
+        <div class="nav-icon">☰</div>
+        <div class="nav-icon">👤</div>
+        <div class="nav-icon">🚪</div>
+    </nav>
+</div>
+/* Dashboard Specific Styles */
+.dashboard {
+    background: #fff; /* Dashboard has a lighter background in the Figma */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.user-avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+/* 2x2 Grid for Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.service-item {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Background Colors from Figma */
+.product-bg { background-color: #D4E157; } /* Lime Green */
+.orders-bg  { background-color: #E1F5FE; border-left: 5px solid #0288D1; } /* Blue tint */
+.payment-bg { background-color: #E8F5E9; border-left: 5px solid #43A047; } /* Green tint */
+.chat-bg    { background-color: #FFF9C4; border-left: 5px solid #FBC02D; } /* Yellow tint */
+
+.icon-box {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.nav-icon {
+    font-size: 20px;
+    color: #999;
+}
+
+.nav-icon.active {
+    color: #43A047;
+}
+<div class="mobile-container">
+    <main class="welcome-screen">
+        <div class="overlay">
+            <div class="logo-area">
+                <img src="agro-logo.png" alt="AgroFarm Logo" class="app-icon">
+                <h1>Welcome !</h1>
+            </div>
+
+            <div class="role-selection">
+                <div class="role-card">
+                    <div class="avatar-circle">
+                        <img src="farmer-illustration.png" alt="Farmer">
+                    </div>
+                    <span class="role-tag">Farmer</span>
+                </div>
+
+                <button class="btn-primary">Get Started »</button>
+            </div>
+        </div>
+    </main>
+</div>

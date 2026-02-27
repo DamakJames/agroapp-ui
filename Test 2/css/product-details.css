@@ -1,0 +1,82 @@
+/* ===== PRODUCT DETAILS SCREEN (Screen 8) ===== */
+.product-details {
+    overflow-y: auto;
+}
+
+.main-prod-img {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main-prod-img img {
+    height: 90%;
+    object-fit: contain;
+}
+
+.details-content h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.qty-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.final-price {
+    color: #43A047;
+    font-size: 16px;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.btn-buy {
+    flex: 1;
+    background: #43A047;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: #388e3c;
+}
+
+.btn-cart {
+    flex: 1;
+    background: #D4E157;
+    color: #333;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background: #cddc39;
+}

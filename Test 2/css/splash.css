@@ -1,0 +1,17 @@
+/* ===== SPLASH SCREEN (Screen 1) ===== */
+.splash-screen {
+    border-radius: 38px 36px 40px 37px;
+    background: url('/images/bg.png') center/cover no-repeat;
+}
+
+.splash-content h2 {
+    color: white;
+    font-size: 28px;
+    padding: 0 20px;
+}
+
+.bottom-label {
+    color: white;
+    opacity: 0.7;
+    font-size: 12px;
+}

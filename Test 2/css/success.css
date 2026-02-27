@@ -1,0 +1,37 @@
+/* ===== SUCCESS SCREEN (Screen 12) ===== */
+.success {
+    border-radius: 37px 40px 38px 41px;
+}
+
+.success-circle {
+    width: 100px;
+    height: 100px;
+    background: #4CAF50;
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.centered h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-back {
+    margin-top: 20px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #333;
+}
