@@ -658,21 +658,22 @@ body {
 }
 
 /* Menu Grid */
-.menu-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 15px;
+ .menu-grid {
+    display: flex
+    
+  
+    
 }
 
 .menu-item {
     background: white;
-    padding: -20px;
+    padding: 5px;
     border-radius: 15px;
     border: 1px solid #eee;
     text-align: center;
     font-weight: bold;
     font-size: 14px;
-}
+} 
 
 
 .active-item {
@@ -1520,10 +1521,6 @@ body {
 .register    { 
     border-radius: 41px 38px 40px 37px; 
 }
-
-
-
-
 
 
 .btn-yellow1 {
